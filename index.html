@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<title>Yahoo Hack Day 2013: FlickMapprerer</title>
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.10.0/build/cssnormalize/cssnormalize.css" />
+	<link rel="stylesheet" type="text/css" href="flickrerer.css" />
+</head>
+
+<body>
+
+	<div id="content">
+		<h1>FlickMapprerer</h1>
+		<form class="filter-form">
+			<input type="text" id="filter-text" />
+			<button id="filter-button">Filter</button>
+		</form>
+		<p id="counter"></p>
+		<div id="map-canvas" class="map"></div>
+		<div id="debug-link-container">
+
+			<a href="#" id="debug-link"><span id="debug-link-arrow" class="arrow-up"></span>debug</a>
+		</div>
+		<div id="debug">
+			<div class="message-container"></div>
+			<div class="control-panel">
+					<a href="#" id="pause"><div class="arrow-right"></div></a>
+			</div>
+			<i>_</i>
+		</div>
+	</div>
+
+	<script src="http://yui.yahooapis.com/3.10.0/build/yui/yui-min.js"></script>
+	<script src="konami.js"></script>
+	<script src="nyancat.js"></script>
+	<script src="underscore-min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=[API_KEY]&libraries=visualization&sensor=false"></script>
+	<script src="flickrerer.js"></script>
+	<script src="infobox.js"></script>
+	<script src="googlemaps.js"></script>
+</body>
+</html>
+
+
